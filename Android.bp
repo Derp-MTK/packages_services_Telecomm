@@ -17,11 +17,6 @@ filegroup {
 // Build the Telecom service.
 android_app {
     name: "Telecom",
-    libs: [
-      "telephony-common",
-      "telephony-ext",
-      "ims-ext-common",
-    ],
     srcs: [
         ":Telecom-srcs",
         "proto/**/*.proto",
@@ -73,9 +68,6 @@ android_test {
         "android.test.mock",
         "android.test.base",
         "android.test.runner",
-        "telephony-common",
-        "telephony-ext",
-        "ims-ext-common",
     ],
 
     jni_libs: [
